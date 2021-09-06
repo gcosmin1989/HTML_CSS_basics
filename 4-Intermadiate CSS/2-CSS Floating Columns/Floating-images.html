@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating images</title>
+</head>
+<style type="text/css">
+    h1{
+        text-align: center;
+        text-decoration: underline;
+    }
+    img{
+        margin-right:20px;
+        padding:10px;
+        border-style: solid;
+        border-radius: 50%;
+        border-color: lightslategray;
+    }
+    .float-left{
+        float:left;
+
+    }
+    .float-right{
+        float:right;
+    }
+    .clear-fix::after{
+    display: block;
+    content: "";
+    clear: both;
+    }
+</style>
+<body>
+    <h1>O imagine Oarecare</h1>
+    <div class="clear-fix">
+        <img src="imagine.jpg" class="float-left" alt="imagine" height="250px" width="250px">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil tempore enim impedit aut architecto ratione minus quo eos necessitatibus numquam! Veniam, id minima consectetur tempore quisquam dolorum quos? Accusantium, tempore.</p>
+    </div>
+    <hr>
+    <div class="clear-fix">
+        <img src="imagine.jpg" class="float-right" alt="imagine" height="250px" width="250px">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil tempore enim impedit aut architecto ratione minus quo eos necessitatibus numquam! Veniam, id minima consectetur tempore quisquam dolorum quos? Accusantium, tempore.</p>
+    </div>
+    <hr>
+    <div class="clear-fix">
+        <img src="imagine.jpg" class="float-left" alt="imagine" height="250px" width="250px">
+        <img src="imagine.jpg" class="float-left" alt="imagine" height="250px" width="250px">
+        <img src="imagine.jpg" class="float-left" alt="imagine" height="250px" width="250px">
+    </div>
+    
+</body>
+</html>
